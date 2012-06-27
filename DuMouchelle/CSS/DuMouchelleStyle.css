@@ -1,0 +1,41 @@
+body
+	{
+		background-image:url("brownpattern.jpg");
+		font-family: arial;
+	}
+#container
+	{
+		background-color: white;
+		height: 100%;
+		width: 80%;
+		box-shadow: 0px 5px 10px #FFA230;
+		margin-right: auto;
+		margin-left: auto;
+		border-radius: 20px;
+	}
+#header
+	{
+		height: 20%;
+		width: 100%;
+		border: solid black 1px;
+		background-color: #7F5232 ;
+		text-align: center;
+		color: white;
+		text-shadow: 5px 5px 5px #000;
+		font-weight: bold;
+		font-size: 50px;
+		border-top-radius: 20px;
+	}
+#main
+	{
+		text-align: center;
+		padding-top: 10px;
+		text-align: center;
+	}
+img
+	{
+		height: 100%;
+		width: 10%;
+		float: left;
+		border-radius: 20px;
+	}
