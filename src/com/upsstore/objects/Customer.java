@@ -1,6 +1,5 @@
 package com.upsstore.objects;
 
-import java.util.Date;
 
 public class Customer {
 	private int customerNumber;
