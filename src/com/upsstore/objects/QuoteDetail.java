@@ -3,24 +3,25 @@ package com.upsstore.objects;
 import java.sql.Date;
 
 public class QuoteDetail {
-	private int quote_id;
-	private int CustomerNumber;
+	private int quoteId;
+	private int customerNumber;
 	private Date quoteDate;
 	private Date firstprintdate;
 	private String lotNumber;
-	private String auction_month;
-	private int quote_year;
+	private String auctionMonth;
+	private int quoteYear;
 	private String trackNumber;
-	private Date ShipDate; 
-	private String ShipingCost;
-	private String PackingCost;
-	private String PrintFlag;
+	private Date shipDate; 
+	private String shippingCost;
+	private String packingCost;
+	private String printFlag;
 	private String comments;
-	public int getQuote_id() {
-		return quote_id;
+	
+	public int getQuoteId() {
+		return quoteId;
 	}
 	public int getCustomerNumber() {
-		return CustomerNumber;
+		return customerNumber;
 	}
 	public Date getQuoteDate() {
 		return quoteDate;
@@ -31,35 +32,35 @@ public class QuoteDetail {
 	public String getLotNumber() {
 		return lotNumber;
 	}
-	public String getAuction_month() {
-		return auction_month;
+	public String getAuctionMonth() {
+		return auctionMonth;
 	}
-	public int getQuote_year() {
-		return quote_year;
+	public int getQuoteYear() {
+		return quoteYear;
 	}
 	public String getTrackNumber() {
 		return trackNumber;
 	}
 	public Date getShipDate() {
-		return ShipDate;
+		return shipDate;
 	}
-	public String getShipingCost() {
-		return ShipingCost;
+	public String getShippingCost() {
+		return shippingCost;
 	}
 	public String getPackingCost() {
-		return PackingCost;
+		return packingCost;
 	}
 	public String getPrintFlag() {
-		return PrintFlag;
+		return printFlag;
 	}
 	public String getComments() {
 		return comments;
 	}
-	public void setQuote_id(int quote_id) {
-		this.quote_id = quote_id;
+	public void setQuoteId(int quote_id) {
+		this.quoteId = quote_id;
 	}
 	public void setCustomerNumber(int customerNumber) {
-		CustomerNumber = customerNumber;
+		this.customerNumber = customerNumber;
 	}
 	public void setQuoteDate(Date quoteDate) {
 		this.quoteDate = quoteDate;
@@ -70,26 +71,26 @@ public class QuoteDetail {
 	public void setLotNumber(String lotNumber) {
 		this.lotNumber = lotNumber;
 	}
-	public void setAuction_month(String auction_month) {
-		this.auction_month = auction_month;
+	public void setAuctionMonth(String auction_month) {
+		this.auctionMonth = auction_month;
 	}
-	public void setQuote_year(int quote_year) {
-		this.quote_year = quote_year;
+	public void setQuoteYear(int quote_year) {
+		this.quoteYear = quote_year;
 	}
 	public void setTrackNumber(String trackNumber) {
 		this.trackNumber = trackNumber;
 	}
 	public void setShipDate(Date shipDate) {
-		ShipDate = shipDate;
+		this.shipDate = shipDate;
 	}
 	public void setShipingCost(String shipingCost) {
-		ShipingCost = shipingCost;
+		this.shippingCost = shipingCost;
 	}
 	public void setPackingCost(String packingCost) {
-		PackingCost = packingCost;
+		this.packingCost = packingCost;
 	}
 	public void setPrintFlag(String printFlag) {
-		PrintFlag = printFlag;
+		this.printFlag = printFlag;
 	}
 	public void setComments(String comments) {
 		this.comments = comments;
