@@ -1,138 +1,33 @@
-function validateForm()
-{
-	if(document.getElementById("uname").value == "")
-	{
-		alert("Must type Username");
-		return false;
-	}
-	if(document.getElementById("pword").value == "")
-	{
-		alert("Must type Password");
-		return false;
-	}
-	
-	return true;
-}
-
 function validateRecipient()
 {
-	if(document.getElementById().value == "")
-	{
-		alert("");
-		return false;
-	}
-	if(document.getElementById().value == "")
-	{
-		alert("");
-		return false;
-	}
-	if(document.getElementById().value == "")
-	{
-		alert("");
-		return false;
-	}
-	if(document.getElementById().value == "")
-	{
-		alert("");
-		return false;
-	}
-	if(document.getElementById().value == "")
-	{
-		alert("");
-		return false;
-	}
-	if(document.getElementById().value == "")
-	{
-		alert("");
-		return false;
-	}
-	if(document.getElementById().value == "")
-	{
-		alert("");
-		return false;
-	}
-	if(document.getElementById().value == "")
-	{
-		alert("");
-		return false;
-	}
-	if(document.getElementById().value == "")
-	{
-		alert("");
-		return false;
-	}
-	if(document.getElementById().value == "")
-	{
-		alert("");
-		return false;
-	}
-	if(document.getElementById().value == "")
-	{
-		alert("");
-		return false;
-	}
-	if(document.getElementById().value == "")
-	{
-		alert("");
-		return false;
-	}
-	if(document.getElementById().value == "")
-	{
-		alert("");
-		return false;
-	}
-	if(document.getElementById().value == "")
-	{
-		alert("");
-		return false;
-	}
-	if(document.getElementById().value == "")
-	{
-		alert("");
-		return false;
-	}
-	if(document.getElementById().value == "")
-	{
-		alert("");
-		return false;
-	}
-	if(document.getElementById().value == "")
-	{
-		alert("");
-		return false;
-	}
-	if(document.getElementById().value == "")
-	{
-		alert("");
-		return false;
-	}
-	if(document.getElementById().value == "")
-	{
-		alert("");
-		return false;
-	}
-	if(document.getElementById().value == "")
-	{
-		alert("");
-		return false;
-	}
-	if(document.getElementById().value == "")
-	{
-		alert("");
-		return false;
-	}
-	if(document.getElementById().value == "")
-	{
-		alert("");
-		return false;
-	}
-	if(document.getElementById().value == "")
-	{
-		alert("");
-		return false;
-	}
+	var requiredFields = $("#recipient").find(".requiredField");
+	var isValid = true;
+	requiredFields.each(function(index){
+		if(this.value.length == 0)
+		{
+			$(this).addClass("requiredIncomplete");
+			isValid = false;
+		}
+		else
+		{
+			$(this).removeClass("requiredIncomplete");
+		}
+		
+		$(this).blur(function(){
+			if($(this).hasClass("requiredIncomplete"))
+			{
+				validateRecipient();
+			}
+		});		
+	});
 	
-	return true;
-
-
+	if(!isValid)
+	{
+		$("#errorMsgs").html("Please complete all required fields.");
+		return false;
+	}
+	else
+	{
+		return true;
+	}
 }
