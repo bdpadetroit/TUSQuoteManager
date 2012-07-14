@@ -1,6 +1,6 @@
 body
 	{
-		background-image:url("brownpattern.jpg");
+		background-image:url("../images/brownpattern.jpg");
 		font-family: arial;
 	}
 #container
@@ -11,12 +11,13 @@ body
 		margin-right: auto;
 		margin-left: auto;
 		border-radius: 20px;
+		min-height: 100%;
 	}
 #header
 	{
 		height: 20%;
-		width: 99.9%;
-		border: solid black 1px;
+		width: 100%;
+		border-bottom: solid black 1px;
 		background-color: #7F5232 ;
 		text-align: center;
 		color: white;
