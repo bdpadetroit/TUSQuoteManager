@@ -35,6 +35,102 @@ public class Customer {
 		return duMoCustomerNumber;
 	}
 	
+	public void setcustomerNumber(int customerNumber) {
+		this.customerNumber = customerNumber;
+	}
+
+	public void setduMoCustomerNumber(String duMoCustomerNumber) {
+		this.duMoCustomerNumber = duMoCustomerNumber;
+	}
+
+	public void setlastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public void setfirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public void setcompanyName(String companyName) {
+		this.companyName = companyName;
+	}
+
+	public void setaddress(String address) {
+		this.address = address;
+	}
+
+	public void setaddressTwo(String addressTwo) {
+		this.addressTwo = addressTwo;
+	}
+
+	public void setcity(String city) {
+		this.city = city;
+	}
+
+	public void setstate(String state) {
+		this.state = state;
+	}
+
+	public void setzip(String zip) {
+		this.zip = zip;
+	}
+
+	public void setcountry(String country) {
+		this.country = country;
+	}
+
+	public void setphoneOne(String phoneOne) {
+		this.phoneOne = phoneOne;
+	}
+
+	public void setphoneTwo(String phoneTwo) {
+		this.phoneTwo = phoneTwo;
+	}
+
+	public void setemail(String email) {
+		this.email = email;
+	}
+
+	public void setcreditCard(String creditCard) {
+		this.creditCard = creditCard;
+	}
+
+	public void setexpDate(String expDate) {
+		this.expDate = expDate;
+	}
+
+	public void setsecurityCode(String securityCode) {
+		this.securityCode = securityCode;
+	}
+
+	public void setbillAddress(String billAddress) {
+		this.billAddress = billAddress;
+	}
+
+	public void setbillAddressTwo(String billAddressTwo) {
+		this.billAddressTwo = billAddressTwo;
+	}
+
+	public void setbillCity(String billCity) {
+		this.billCity = billCity;
+	}
+
+	public void setbillState(String billState) {
+		this.billState = billState;
+	}
+
+	public void setbillZip(String billZip) {
+		this.billZip = billZip;
+	}
+
+	public void setbillCountry(String billCountry) {
+		this.billCountry = billCountry;
+	}
+
+	public void setcomments(String comments) {
+		this.comments = comments;
+	}
+
 	public String getlastName() {
 		return lastName;
 	}
